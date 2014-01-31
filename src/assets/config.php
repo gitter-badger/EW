@@ -3,6 +3,8 @@
 	$db_username = "root"; // The username that will be used to connect to the database;
 	$db_password = ""; // The password that will be used to connect to the database;
 	$db = ""; // The database that will be used for connections;
+
+	$mainurl = "/"; // The url of the main page (e.g, www.example.com/studymountain/)
 	
 	//
 	
