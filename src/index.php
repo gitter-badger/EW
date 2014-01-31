@@ -1,6 +1,10 @@
 <?php
 	// Initialize the session
 	session_start();
+	
+	if(isset($_GET["msg")) {
+		$msg = $_GET["msg"];
+	}
 
 ?>
 <!DOCTYPE html>
@@ -10,7 +14,7 @@
 		<title>Home — Study Mountain</title>
 		<link type="text/css" rel="stylesheet" href="assets/css/main.css" />
 		<link type="text/css" rel="stylesheet" href="assets/css/bootstrap.css" />
-		<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+		<script type="text/javascript" src="assets/js/bootstrap.js"><?php if(isset($msg)) {echo "alert('" . $msg . "');";} ?></script>
 	</head>
 	
 	<body>
