@@ -8,4 +8,5 @@
 	
 	$login_salt = "tastysalt"; /* This should be changed as it is used to hash the passwords; NOTICE : ACCOUNTS ADDED BEFORE THIS WILL NEED THEIR
 	                  PASSWORDS RESET; */
+	$login_table = "users"; // The table in which the usernames, passwords, and ids are stored
 ?>
