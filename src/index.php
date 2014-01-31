@@ -11,7 +11,7 @@
 <html lang="en">
 
 	<head>
-		<title>Home — Study Mountain</title>
+		<title>Home - Study Mountain</title>
 		<link type="text/css" rel="stylesheet" href="assets/css/main.css" />
 		<link type="text/css" rel="stylesheet" href="assets/css/bootstrap.css" />
 		<script type="text/javascript" src="assets/js/bootstrap.js"><?php if(isset($msg)) {echo "alert('" . $msg . "');";} ?></script>
@@ -20,11 +20,11 @@
 	<body>
 		<h1>Please login below</h1>
 		<form name="login" method="post" action="assets/api.php?a=login">
-			<input type="text" name="username" placeholder="Username" />
+			<input type="text" class="input-block-level" name="username" placeholder="Username" />
 			<br />
-			<input type="password" name="password" placeholder="Password" />
+			<input type="password" class="input-block-level" name="password" placeholder="Password" />
 			<br />
-			<input type="submit" value="Login" />
+			<input type="submit" class="btn btn-large btn-primary" value="Login" />
 		</form>
 	</body>
 
