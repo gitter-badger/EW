@@ -18,7 +18,9 @@
 				break;
 			case "logout":
 				session_destroy();
+				header("Location: " . $main_url);
 				break;
 		}
 	}
+	exit;
 ?>
