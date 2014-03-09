@@ -18,6 +18,14 @@ Planned Features
 
   - Customizable Tests
   - Online Grades
+  
+Tools
+=====
+We will be adding some tools to make it easier to administrate and view your StudyMountain installation.
+Here are a few we have completed or are working on.
+
+  - SMViewer : Don't want your students straying away from StudyMountain? Add this program to your computers!
+  - SMPassGen : If you want to create a new user into your database, you can use this tool to hash the password!
 
 License
 =======
