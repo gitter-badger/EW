@@ -19,11 +19,11 @@
 	<body>
 		<h1>Please login below</h1>
 		<form name="login" method="post" action="assets/api.php?a=login">
-			<input type="text" class="input-block-level" name="username" placeholder="Username" />
+			<input type="text" name="username" placeholder="Username" />
 			<br />
-			<input type="password" class="input-block-level" name="password" placeholder="Password" />
+			<input type="password" name="password" placeholder="Password" />
 			<br />
-			<input type="submit" class="btn btn-large btn-primary" value="Login" />
+			<input type="submit" class="btn btn-medium btn-primary" value="Login" />
 		</form>
 	</body>
 
