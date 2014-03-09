@@ -17,7 +17,11 @@
 	</head>
 	
 	<body>
-		<h1>Please login below</h1>
+		<h1><img src="assets/img/smlogo.png" alt="StudyMountain" /></h1>
+		<hr />
+		<br />
+		<h2>Please login below</h2>
+		<br />
 		<form name="login" method="post" action="assets/api.php?a=login">
 			<input type="text" name="username" placeholder="Username" />
 			<br />
