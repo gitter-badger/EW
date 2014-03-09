@@ -29,6 +29,11 @@
 			<br />
 			<input type="submit" class="btn btn-medium btn-primary" value="Login" />
 		</form>
+		<br />
+		<br />
+		<hr />
+		<br />
+		<strong>Created by Rythix</strong>
 	</body>
 
 </html>
