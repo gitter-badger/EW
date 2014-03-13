@@ -14,6 +14,7 @@
 		<link type="text/css" rel="stylesheet" href="assets/css/main.css" />
 		<link type="text/css" rel="stylesheet" href="assets/css/bootstrap.css" />
 		<script type="text/javascript" src="assets/js/bootstrap.js"><?php if(isset($msg)) {echo "alert('" . $msg . "');";} ?></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	</head>
 	
 	<body>
