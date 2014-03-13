@@ -27,7 +27,7 @@
 				if($count == 1) {
 					$_SESSION['login'] = "1";
 					$_SESSION['username'] = $_POST["username"];
-					// TODO: Work on dashboard
+					header("Location: dashboard.php?PHPSESSID=" . session_id());
 					exit;
 				} else {
 					header("Location:" . $main_url . "/?msg=Incorrect+username+or+password");
