@@ -38,7 +38,7 @@
 				break;
 			case "logout":
 				session_destroy();
-				header("Location: " . $main_url);
+				header("Location: " . $main_url . "/?msg=Logout+successful!");
 				break;
 		}
 	}
