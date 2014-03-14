@@ -2,8 +2,17 @@
 	// Initialize the session
 	session_start();
 	
+	// Include the configuration file
+	include("assets/config.php");
+	
 	if(isset($_GET["msg"])) {
 		$msg = $_GET["msg"];
+	}
+	
+	if(isset($_SESSION["login"]) || isset($_SESSION["username"])) {
+		// User is already logged in
+		header("Location: " . $main_url . "/assets/dashboard.php?PHPSESSID=" . session_id());
+		exit;
 	}
 ?>
 <!DOCTYPE html>
