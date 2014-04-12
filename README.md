@@ -1,7 +1,7 @@
 StudyMountain
 =============
 
-StudyMountain is a program that helps students study/take tests online!
+StudyMountain is a program that helps students study/take tests online! It also works offline, and is being offered for free by Emposoft as part of our education program. 
 
 Requirements
 ============
