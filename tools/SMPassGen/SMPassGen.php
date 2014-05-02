@@ -17,12 +17,12 @@
 	</head>
 	
 	<body>
-		<h2>Please fill out the form below</h2>
+		<h2>Please fill out the form below.</h2>
 		<br />
 		<form name="pg" method="post" action="SMPassGen.php">
 			<input type="text" name="pass" placeholder="Password"/>
 			<br />
-			<input type="text" name="salt" placeholder="Salt"/>
+			<input type="text" name="salt" placeholder="Your name"/>
 			<br />
 			<input type="submit" value="Generate"/>
 		</form>
