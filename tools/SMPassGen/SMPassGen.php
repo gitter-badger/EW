@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>SMPassGen - StudyMountain</title>
+		<title>SMPassGen - Edlightened Desktop</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<style type="text/css">
 			html {text-align:center;font-weight:bold;}
