@@ -16,7 +16,7 @@
 <html lang="en">
 	
 	<head>
-		<title>Dashboard - StudyMountain</title>
+		<title>Dashboard - Edlightened</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link type="text/css" rel="stylesheet" href="css/main.css" />
 		<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
@@ -25,7 +25,7 @@
 	
 	<body>
 		<br />
-		<h1><img src="img/smlogo.png" alt="StudyMountain" /></h1>
+		<h1><img src="img/smlogo.png" alt="Edlightened" /></h1>
 		<h3>Welcome back, <?php echo $username; ?>!</h3>
 		<hr />
 		<br />
@@ -33,7 +33,7 @@
 		<br />
 		<hr />
 		<br />
-		<strong>Created by Rythix</strong>
+		<strong>Created by Emposoft</strong>
 	</body>
 
 </html>
