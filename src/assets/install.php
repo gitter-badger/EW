@@ -16,7 +16,7 @@
 <html>
 
 	<head>
-		<title>Install - StudyMountain</title>
+		<title>Install - Edlightened Desktop</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	</head>
 	
