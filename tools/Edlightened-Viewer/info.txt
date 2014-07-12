@@ -1,0 +1,9 @@
+This software (Edlightened-Viewer) is not property of Emposoft. It has been forked from https://github.com/tetsuwo/website-blocker-chrome.ext. 
+It has been rebranded in certain areas. If copyright and usage issues arise, Edlightened-Viewer maybe subject to litigation, removal, etc. 
+We will comply fully with any cease and desist letters, lawsuits, decisions, and anything else on the behalf of Tetsuwo, the author. 
+
+NOTE: This product works only with computers running the Google Chrome browser. It will not work with other browsers. 
+For more information on this product, please visit the Github source page or visit the Chrome Web Store download page at https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib
+
+
+
