@@ -1,4 +1,4 @@
-Edlightened Desktop
+Edlightened Web
 =============
 
 Edlightened is a program that helps students study/take tests online! It is being offered for free by Emposoft as part of our education program. 
@@ -13,20 +13,23 @@ Features
 
   - Easy to setup configuration
   - Secure password encryption (prevents students from hacking into another account to prevent cheating.)
+  - Open source for developers to build on. 
 
 Planned Features
 ================
 
   - Customizable Tests
   - Online Grades
+  - Compatibility with Edlightened Mobile and CPLib
+  
   
 Tools
 =====
 We will be adding some tools to make it easier to administrate and view your Edlightened installation.
 Here are a few we have completed or are working on.
 
-  - SMViewer : Don't want your students straying away from Edlightened? Add this program to your computers!
-  - SMPassGen : If you want to create a new user into your database, you can use this tool to hash the password!
+  - EWViewer : Don't want your students straying away from Edlightened? Add this program to your computers!
+  - EWPassGen : If you want to create a new user into your database, you can use this tool to hash the password!
 
 License
 =======
