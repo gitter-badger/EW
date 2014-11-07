@@ -19,7 +19,7 @@
 <html lang="en">
 
 	<head>
-		<title>Home - Edlightened Desktop</title>
+		<title>Home - Edlightened Web</title>
 		<link type="text/css" rel="stylesheet" href="assets/css/main.css" />
 		<link type="text/css" rel="stylesheet" href="assets/css/bootstrap.css" />
 		<script type="text/javascript" src="assets/js/bootstrap.js"><?php if(isset($msg)) {echo "alert('" . $msg . "');";} ?></script>
@@ -27,7 +27,7 @@
 	</head>
 	
 	<body>
-		<h1><img src="assets/img/smlogo.png" alt="Edlightened" /></h1>
+		<h1><img src="http://edlightened.tk/forums/images/logo.png" alt="Edlightened" /></h1>
 		<hr />
 		<br />
 		<h2>Please login below</h2>
@@ -43,7 +43,7 @@
 		<br />
 		<hr />
 		<br />
-		<strong>Created by Emposoft. </strong>
+		<strong>Created by javathunderman. </strong>
 	</body>
 
 </html>
