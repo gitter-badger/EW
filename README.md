@@ -1,19 +1,24 @@
-## angular-timer — A simple, re-usable, inter-operable timer directive [![Build Status](https://travis-ci.org/siddii/angular-timer.png)](https://travis-ci.org/siddii/angular-timer)
+#Edlightened Web
 
-### Getting started
-With any of the following options...
-* Download the latest script file - https://raw.github.com/siddii/angular-timer/master/dist/angular-timer.min.js
-* Clone the repo - `git@github.com:siddii/angular-timer.git`
-* Install angular-timer using [Bower](http://bower.io) - `bower install angular-timer`
+Edlightened is a program that helps students study/take tests online! It is being offered for free by Emposoft as part of our education program.
 
-### Running locally
-Using [Grunt](http://gruntjs.com/) type `grunt` from command line, the default task will open index.html page in your
-default browser
+#Requirements
+Edlightened simply requires an internet connection.
 
-### Running tests
-Following command will run both unit & End-to-End (e2e) tests
-```bash
-grunt tests
-```
+#Features
+1. Easy to setup configuration
+2. Secure password encryption (prevents students from hacking into another account to prevent cheating.)
+3. Open source for developers to build on.
+
+#Planned Features
+1. Online Grades
+2. Compatibility with Edlightened Mobile and CPLib
+
+#Tools
+We will be adding some tools to make it easier to administrate and view your Edlightened installation. Here are a few we have completed or are working on.
+
+1. EWViewer : Don't want your students straying away from Edlightened? Add this program to your computers!
+2. EWPassGen : If you want to create a new user into your database, you can use this tool to hash the password!
 
 
+PROJECT STATUS: In development.
