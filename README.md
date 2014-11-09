@@ -1,39 +1,19 @@
-Edlightened Web
-=============
+## angular-timer — A simple, re-usable, inter-operable timer directive [![Build Status](https://travis-ci.org/siddii/angular-timer.png)](https://travis-ci.org/siddii/angular-timer)
 
-Edlightened is a program that helps students study/take tests online! It is being offered for free by Emposoft as part of our education program. 
+### Getting started
+With any of the following options...
+* Download the latest script file - https://raw.github.com/siddii/angular-timer/master/dist/angular-timer.min.js
+* Clone the repo - `git@github.com:siddii/angular-timer.git`
+* Install angular-timer using [Bower](http://bower.io) - `bower install angular-timer`
 
-Requirements
-============
+### Running locally
+Using [Grunt](http://gruntjs.com/) type `grunt` from command line, the default task will open index.html page in your
+default browser
 
-Edlightened simply requires an internet connection. 
-
-Features
-========
-
-  - Easy to setup configuration
-  - Secure password encryption (prevents students from hacking into another account to prevent cheating.)
-  - Open source for developers to build on. 
-
-Planned Features
-================
-
-  - Customizable Tests
-  - Online Grades
-  - Compatibility with Edlightened Mobile and CPLib
-  
-  
-Tools
-=====
-We will be adding some tools to make it easier to administrate and view your Edlightened installation.
-Here are a few we have completed or are working on.
-
-  - EWViewer : Don't want your students straying away from Edlightened? Add this program to your computers!
-  - EWPassGen : If you want to create a new user into your database, you can use this tool to hash the password!
-
-License
-=======
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Edlightened</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Emposoft</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US">Creative Commons Attribution 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://www.github.com/Emposoft" rel="dct:source">https://www.github.com/Emposoft</a>.
+### Running tests
+Following command will run both unit & End-to-End (e2e) tests
+```bash
+grunt tests
+```
 
 
-PROJECT STATUS: In development. 

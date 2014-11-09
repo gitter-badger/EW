@@ -4,7 +4,7 @@
 	$db_password = ""; // The password that will be used to connect to the database;
 	$db = ""; // The database that will be used for connections;
 
-	$main_url = "/"; // The url of the main page (e.g, www.example.com/studymountain/)
+	$main_url = "http://edlightened.tk/betaweb/Dashboard%20Template%20for%20Bootstraps.html"; // The url of the main page (e.g, www.example.com/studymountain/)
 	
 	//
 	
