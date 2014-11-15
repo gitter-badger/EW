@@ -9,6 +9,7 @@ Edlightened simply requires an internet connection.
 1. Easy to setup configuration
 2. Secure password encryption (prevents students from hacking into another account to prevent cheating.)
 3. Open source for developers to build on.
+4. Timer for teachers to see how long a student has been on. 
 
 #Planned Features
 1. Online Grades
