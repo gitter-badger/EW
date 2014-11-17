@@ -13,7 +13,8 @@ Edlightened simply requires an internet connection.
 
 #Planned Features
 1. Online Grades
-2. Compatibility with Edlightened Mobile and CPLib
+2. Possible compatibility with Edlightened Mobile and CPLib
+3. Content Pack system
 
 #Tools
 We will be adding some tools to make it easier to administrate and view your Edlightened installation. Here are a few we have completed or are working on.
