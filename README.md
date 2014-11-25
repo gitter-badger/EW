@@ -17,7 +17,7 @@ Edlightened simply requires an internet connection.
 3. Content Pack system
 
 #Tools
-We will be adding some tools to make it easier to administrate and view your Edlightened installation. Here are a few we have completed or are working on.
+We will be adding some tools to make it easier to administrate and view your Edlightened installation. Here are a few we have completed or are working on. Currently, work on these tools has been temporarily suspended. 
 
 1. EWViewer : Don't want your students straying away from Edlightened? Add this program to your computers!
 2. EWPassGen : If you want to create a new user into your database, you can use this tool to hash the password!
