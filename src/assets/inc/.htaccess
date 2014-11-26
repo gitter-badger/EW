@@ -1,0 +1,2 @@
+# Deny access from any external client
+Deny from all

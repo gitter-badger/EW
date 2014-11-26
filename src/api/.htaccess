@@ -1,0 +1,4 @@
+# API .htaccess file
+<FilesMatch ^\b\w*\b$>
+	SetHandler application/x-httpd-php
+</FilesMatch>
