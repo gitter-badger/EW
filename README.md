@@ -1,26 +1,24 @@
-#Edlightened Web
+Edlightened Web
+===============
+Edlightened Web is a program that helps students study/take tests online! It is being offered for free by Emposoft as part of our education suite Edlightened.
 
-Edlightened is a program that helps students study/take tests online! It is being offered for free by Emposoft as part of our education program.
+Requirements
+============
+[to be added]
 
-#Requirements
-Edlightened simply requires an internet connection.
+Features
+========
+ - Easy to setup configuration
+ - Safe and secure login system
+ - Compatible with almost every database out there*
+ - Online grades support (with auto grading for tests!)
 
-#Features
-1. Easy to setup configuration
-2. Secure password encryption (prevents students from hacking into another account to prevent cheating.)
-3. Open source for developers to build on.
-4. Timer for teachers to see how long a student has been on. 
+* Supported databases are listed here: <a href="http://php.net/manual/en/pdo.drivers.php" target="_blank">http://php.net/manual/en/pdo.drivers.php</a>
 
-#Planned Features
-1. Online Grades
-2. Possible compatibility with Edlightened Mobile and CPLib
-3. Content Pack system
-
-#Tools
-We will be adding some tools to make it easier to administrate and view your Edlightened installation. Here are a few we have completed or are working on. Currently, work on these tools has been temporarily suspended. 
-
-1. EWViewer : Don't want your students straying away from Edlightened? Add this program to your computers!
-2. EWPassGen : If you want to create a new user into your database, you can use this tool to hash the password!
-
-
-PROJECT STATUS: In development.
+Future Features
+===============
+ - None yet!
+ 
+License
+=======
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Edlightened Web</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
