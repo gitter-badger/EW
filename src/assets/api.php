@@ -10,31 +10,48 @@
 		
 		switch($a) {
 			case "login":
-				if(!(isset($_SESSION["login"])) || !(isset($_SESSION["username"]))) {
-					$usr = stripslashes($_POST["username"]);
-					$psw = stripslashes(sha1(md5($_POST["password"] + $login_salt)));
-				
-					$query = 'SELECT * FROM users WHERE username="' . $usr . '" and password="'. $psw . '";';
-				
-					$mysqli = new mysqli($db_host, $db_username, $db_password, $db);
-					if (mysqli_connect_errno()) {
-						trigger_error('Authentication Failed : ' . mysqli_connect_error(), E_USER_ERROR);
-					}
-				
-					$result = mysqli_query($mysqli, $query);
-					
-					$count = mysqli_num_rows($result);
-				
-					if($count == 1) {
-						$_SESSION['login'] = "1";
-						$_SESSION['username'] = $_POST["username"];
-						header("Location: dashboard.php?PHPSESSID=" . session_id());
-						exit;
-					} else {
-						header("Location:" . $main_url . "/?msg=Incorrect+username+or+password");
-						exit;
-					}
-				}
+				echo "<!DOCTYPE html><html lang=\"en\"><head><title>Logging in - Edlightened Web</title><style type=\"text/css\">html{text-align:center;}</style></head><body><h1>Logging in to Edlightened Web...</h1></body></html>";
+                               
+                $usr = $_POST["username"];
+                $psw = $_POST["password"];
+                               
+                if($usr == null || $psw == null) {
+                     header("Location: /?msg=1");
+                     exit;
+                }
+                               
+                $mysqli = new mysqli($mysql_host, $mysql_user, $mysql_pass, $mysql_db);
+                               
+                if ($mysqli->connect_errno) {
+                     header("Location: /?msg=3&err=" . urlencode("(" . $mysqli->connect_errno . ") " . $mysqli->connect_error));
+                     exit;
+                 }
+                               
+                 $pw_query = "SELECT * FROM `users` WHERE `username` = '". $usr . "'";
+                               
+                 foreach($mysqli->query($pw_query) as $r) {
+                     if ((password_verify($psw, $r['password'])) && !($r['banned'] == 1)) {
+                                                $_SESSION["ew_li"] = 1;
+                                                $_SESSION["ew_un"] = $r['username'];
+                                                $_SESSION["ew_dn"] = $r['display_name'];
+                                                
+                                                header("Location: /dashboard.php?phpsessid=" . session_id());
+                                                $mysqli->close();
+                                                exit;
+                                        } else if ((password_verify($psw, $r['password'])) && ($r['banned'] == 1)) {
+                                                header("Location: /?msg=2");
+                                                $mysqli->close();
+                                                exit;
+                                        } else if (!(password_verify($psw, $r['password']))) {
+                                                header("Location: /?msg=1");
+                                                $mysqli->close();
+                                                exit;
+                                        }
+                                }
+                               
+                                header("Location: /?msg=1");
+                               
+                                $mysqli->close();
 				break;
 			case "logout":
 				session_destroy();

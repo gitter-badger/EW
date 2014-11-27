@@ -1,10 +1,10 @@
 <?php
-	$db_host = "localhost"; // The host of the MySQL server that contains the database;
-	$db_username = "root"; // The username that will be used to connect to the database;
-	$db_password = ""; // The password that will be used to connect to the database;
-	$db = ""; // The database that will be used for connections;
+	$db_host = "mysql.neq3.com"; // The host of the MySQL server that contains the database;
+	$db_username = "u194981481_main"; // The username that will be used to connect to the database;
+	$db_password = "u194981481_main"; // The password that will be used to connect to the database;
+	$db = "roxi77*"; // The database that will be used for connections;
 
-	$main_url = "http://edlightened.tk/betaweb/Dashboard%20Template%20for%20Bootstraps.html"; // The url of the main page (e.g, www.example.com/studymountain/)
+	$main_url = "http://edlightened.tk/betaweb/Edlightened%20Dashboard.html"; 
 	
 	//
 	
