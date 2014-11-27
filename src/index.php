@@ -24,6 +24,7 @@
 		<link type="text/css" rel="stylesheet" href="assets/css/bootstrap.css" />
 		<script type="text/javascript" src="assets/js/bootstrap.js"><?php if(isset($msg)) {echo "alert('" . $msg . "');";} ?></script>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	</head>
 	
 	<body>
@@ -32,6 +33,7 @@
 		<br />
 		<h2>Please login below</h2>
 		<br />
+		<div class="container-fluid">
 		<form name="login" method="post" action="assets/api.php?a=login">
 			<input type="text" name="username" placeholder="Username" />
 			<br />
@@ -39,6 +41,7 @@
 			<br />
 			<input type="submit" class="btn btn-medium btn-primary" value="Login" />
 		</form>
+		</div>
 		<br />
 		<br />
 		<hr />
