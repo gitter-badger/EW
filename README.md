@@ -1,6 +1,6 @@
 #Edlightened Web
 
-Edlightened is a program that helps students study/take tests online! It is being offered for free by Emposoft as part of our education program.
+Edlightened is a program that helps students study/take tests online! It is being offered for free by Emposoft as part of our education program. NOTICE: THIS IS CODE BY JAVATHUNDERMAN AND THE MASTER VERSION. THE OTHER VERSION IS THE PROMETHEAN VERSION BEING WRITTEN BY PERDIXIUS. 
 
 #Requirements
 Edlightened simply requires an internet connection.
