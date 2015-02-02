@@ -457,6 +457,17 @@ echo "$myXMLdata";
                     alert("You answered too many questions incorrectly. Try again.");
                 }
             }
+            
+            // JS:
+var count = $('#count').val();
+
+
+
+
+
+$.post('scores.php', { count: count}, function(data) {
+    alert( data );
+} )
         </script>
 
 

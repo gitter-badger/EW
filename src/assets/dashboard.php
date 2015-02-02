@@ -30,9 +30,7 @@
     <!-- Custom styles for this template -->
     <link href="http://getbootstrap.com/examples/dashboard/dashboard.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="./Dashboard Template for Bootstrap_files/ie-emulation-modes-warning.js"></script><style type="text/css"></style>
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -70,7 +68,7 @@
 
           <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder">
-              <a href= "http://edlightened.tk/betaweb/Quizscreen"<a><img data-src="http://ecx.images-amazon.com/images/I/61Tchc9QyeL._SL290_.jpg" class="img-responsive" alt="200x200" src="http://ecx.images-amazon.com/images/I/61Tchc9QyeL._SL290_.jpg" data-holder-rendered="true"</img></a>
+              <a href= "http://empire-london.codio.io/Quizscreen.html"<a><img data-src="http://ecx.images-amazon.com/images/I/61Tchc9QyeL._SL290_.jpg" class="img-responsive" alt="200x200" src="http://ecx.images-amazon.com/images/I/61Tchc9QyeL._SL290_.jpg" data-holder-rendered="true"</img></a>
               <h4>Math</h4>
               
             </div>

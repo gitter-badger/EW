@@ -1,0 +1,72 @@
+<?php
+	// Initialize the session
+	session_start();
+	
+	// Include the configuration file
+	include("assets/config.php");
+	
+	if(isset($_GET["msg"])) {
+		$msg = $_GET["msg"];
+	}
+	
+	if(isset($_SESSION["login"]) || isset($_SESSION["username"])) {
+		// User is already logged in
+		header("Location: " . $main_url . "/assets/dashboard.php?PHPSESSID=" . session_id());
+		exit;
+	}
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Login - Edlightened Web</title>
+		<link type="text/css" rel="stylesheet" href="assets/css/main.css" />
+		<link type="text/css" rel="stylesheet" href="assets/css/bootstrap.css" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	</head>
+	
+	<body>
+        <img src= "http://edlightened.tk/images/pic02.jpg" align:"CENTER"</img>
+        
+<div class="container">
+    <div class="row">
+		<div class="span12">
+			<form class="form-horizontal" action='' method="POST">
+			  <fieldset>
+			    
+                  <br />
+			    <div class="control-group">
+			      <!-- Username -->
+			      <label class="control-label"  for="username">Username</label>
+			      <div class="controls">
+			        <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
+			      </div>
+			    </div>
+                  <br />
+			    <div class="control-group">
+			      <!-- Password-->
+			      <label class="control-label" for="password">Password</label>
+			      <div class="controls">
+			        <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
+			      </div>
+			    </div>
+                  <br />
+			    <div class="control-group">
+			      <!-- Button -->
+			      <div class="controls">
+			        <a href= "http://empire-london.codio.io/Edlightened+Dashboard.html"<a><button class="btn btn-success">Login</button></a>
+			      </div>
+                  <br />
+			    </div>
+			  </fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+
+	</body>
+
+</html>
