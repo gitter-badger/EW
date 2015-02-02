@@ -9,6 +9,7 @@
     </title>
 
     <link href="src/assets/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="AngularJS\angular.min.js"></script>
     <script src="AngularJS\app\js\timer.js"></script>
     <script>
@@ -16,12 +17,10 @@
 
         function MyAppController($scope) {
             $scope.timerRunning = true;
-
             $scope.startTimer = function() {
                 $scope.$broadcast('timer-start');
                 $scope.timerRunning = true;
             };
-
             $scope.stopTimer = function() {
                 $scope.$broadcast('timer-stop');
                 $scope.timerRunning = false;
@@ -33,18 +32,18 @@
 </head>
 
 <body ng-app="MyApp">
-    <a href="http://edlightened.tk">
-        <img class="displayed" src="http://edlightened.tk/forums/images/logo.png" align:left="" alt="alt text" style="border:none;">
+    <a href="http://empire-london.codio.io/Quizscreen.html">
+        <img class="displayed" src="http://edlightened.tk/images/pic02.jpg" align:left="" alt="alt text" style="border:none;">
     </a>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="src\assets\js\bootstrap.min.js"></script>
 
-<nav class="navbar navbar-inverse" role="navigation">
-<div class="container-fluid">
- 
-<div class="navbar-header">
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -53,19 +52,19 @@
                 </button>
                 <a class="navbar-brand" href="#">Home</a>
             </div>
- 
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-<ul class="nav navbar-nav">
-<li><a href="#question10"><b>Last question</b></a>
-</li>
-</ul>
-</div>
- 
-</div>
- 
-</nav>
 
-    <form action="http://edlightened.tk/betaweb/Edlightened%20Dashboard.html" method="POST">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#question10"><b>Last question</b></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <form action="http://empire-london.codio.io/Quizscreen.html" method="POST">
 
         <br>
         <table style="margin-bottom:3px;" align="center">
@@ -95,8 +94,12 @@
                                                     <tbody>
                                                         <tr>
                                                             <td><font size="+1"> <font size="+2" color="black"><b>1.</b></font> 
-                                                                <b>What show did WATSON appear on in February 2011?<br>
-</b>
+                                                                <b>
+                                                                  <?php include 'test.php';
+echo "$myXMLdata";
+?>
+                                                                </b> 
+                                                                <br>
                                                                 </font>
                                                             </td>
                                                         </tr>
@@ -208,7 +211,7 @@
                                                 </table>
                                                 <font size="+1">
 <ul>
-<div onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);" style="cursor: default;"><input name="q4" value="He catorgorizes it with similar ones" type="radio" onclick="answerSelected(this);"> He catorgorizes it with similar ones</div>
+<div onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);" style="cursor: default;"><input name="q4a1" value="He catorgorizes it with similar ones" type="radio" onclick="answerSelected(this);"> He catorgorizes it with similar ones</div>
 <div onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q4" value="He identifies key words" type="radio" onclick="answerSelected(this);"> He identifies key words</div>
 <div onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q4" value="He does a Google search within his data files" type="radio" onclick="answerSelected(this);"> He does a Google search within his data files</div>
 <div onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q4" value="He comes up with hundreds of possible answers" type="radio" onclick="answerSelected(this);"> He comes up with hundreds of possible answers</div>
@@ -433,7 +436,7 @@
                         </p>
                         <center>
                             <a name="question10">
-                                <input type="submit" name= "submitanswers" value="Submit my Answers!">
+                                <input type="submit" name="submitanswers" value="Submit my Answers!">
                             </a>
                         </center>
                         <a name="question10">
@@ -442,13 +445,27 @@
                 </tr>
             </tbody>
         </table>
+        <script>
+            function checkTest() {
+                var count = 0;
+                if($('input[type="radio"][name=q1]:checked').val() == "Jeopardy") {
+                    count++;
+                }
+                if(count > 0) {
+                    alert("Congratulations! You Passed!");
+                } else {
+                    alert("You answered too many questions incorrectly. Try again.");
+                }
+            }
+        </script>
+
+
+        <div ng-controller="MyAppController">
+
+            <small><timer interval="1000">{{hours}} hour{{hoursS}}, {{minutes}} minute{{minutesS}}, {{seconds}} second{{secondsS}}.</timer></small>
+
+        </div>
     </form>
-
-    <div ng-controller="MyAppController">
-
-        <small><timer interval="1000">{{hours}} hour{{hoursS}}, {{minutes}} minute{{minutesS}}, {{seconds}} second{{secondsS}}.</timer></small>
-
-    </div>
     <small> Created with excellence by Javathunderman </small>
 
 </body>
