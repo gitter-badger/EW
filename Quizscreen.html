@@ -96,7 +96,7 @@
                                                             <td><font size="+1"> <font size="+2" color="black"><b>1.</b></font> 
                                                                 <b>
                                                                   <?php include 'test.php';
-echo "$myXMLdata";
+echo "$q1";
 ?>
                                                                 </b> 
                                                                 <br>
@@ -133,7 +133,9 @@ echo "$myXMLdata";
                                                     <tbody>
                                                         <tr>
                                                             <td><font size="+1"> <font size="+2" color="black"><b>2.</b></font> 
-                                                                <b>What company created WATSON?<br>
+                                                                <b>                                                         <?php include 'test.php';
+echo "$q2";
+?><br>
 </b>
                                                                 </font>
                                                             </td>
@@ -168,7 +170,9 @@ echo "$myXMLdata";
                                                     <tbody>
                                                         <tr>
                                                             <td><font size="+1"> <font size="+2" color="black"><b>3.</b></font> 
-                                                                <b>How does WATSON get all the information inside his data files?</b>
+                                                                <b>                                                         <?php include 'test.php';
+echo "$q3";
+?></b>
                                                                 </font>
                                                             </td>
                                                         </tr>
@@ -202,7 +206,9 @@ echo "$myXMLdata";
                                                     <tbody>
                                                         <tr>
                                                             <td><font size="+1"> <font size="+2" color="black"><b>4.</b></font> 
-                                                                <b>What does WATSON first come up with when presented with a question?<br>
+                                                                <b>                                                         <?php include 'test.php';
+echo "$q4";
+?><br>
 </b>
                                                                 </font>
                                                             </td>
@@ -237,7 +243,9 @@ echo "$myXMLdata";
                                                     <tbody>
                                                         <tr>
                                                             <td><font size="+1"> <font size="+2" color="black"><b>5.</b></font> 
-                                                                <b>Who was WATSON named for?<br>
+                                                                <b>                                                         <?php include 'test.php';
+echo "$q5";
+?><br>
 </b>
                                                                 </font>
                                                             </td>
@@ -272,7 +280,9 @@ echo "$myXMLdata";
                                                     <tbody>
                                                         <tr>
                                                             <td><font size="+1"> <font size="+2" color="black"><b>6.</b></font> 
-                                                                <b>What IBM project is WATSON a part of?</b>
+                                                                <b>                                                         <?php include 'test.php';
+echo "$q6";
+?></b>
                                                                 </font>
                                                             </td>
                                                         </tr>
@@ -306,7 +316,9 @@ echo "$myXMLdata";
                                                     <tbody>
                                                         <tr>
                                                             <td><font size="+1"> <font size="+2" color="black"><b>7.</b></font> 
-                                                                <b>How did WATSON receive questions asked by people?</b>
+                                                                <b>                                                         <?php include 'test.php';
+echo "$q7";
+?></b>
                                                                 </font>
                                                             </td>
                                                         </tr>
@@ -340,7 +352,9 @@ echo "$myXMLdata";
                                                     <tbody>
                                                         <tr>
                                                             <td><font size="+1"> <font size="+2" color="black"><b>8.</b></font> 
-                                                                <b>How did WATSON prepare for Jeopardy?</b>
+                                                                <b>                                                         <?php include 'test.php';
+echo "$q8";
+?></b>
                                                                 </font>
                                                             </td>
                                                         </tr>
@@ -374,7 +388,9 @@ echo "$myXMLdata";
                                                     <tbody>
                                                         <tr>
                                                             <td><font size="+1"> <font size="+2" color="black"><b>9.</b></font> 
-                                                                <b>How big is WATSON?</b>
+                                                                <b>                                                         <?php include 'test.php';
+echo "$q9";
+?></b>
                                                                 </font>
                                                             </td>
                                                         </tr>
@@ -408,7 +424,9 @@ echo "$myXMLdata";
                                                     <tbody>
                                                         <tr>
                                                             <td><font size="+1"> <font size="+2" color="black"><b>10.</b></font> 
-                                                                <b>What is the first profession that WATSON is going to be used in?</b>
+                                                                <b>                                                         <?php include 'test.php';
+echo "$q10";
+?></b>
                                                                 </font>
                                                             </td>
                                                         </tr>
@@ -448,28 +466,58 @@ echo "$myXMLdata";
         <script>
             function checkTest() {
                 var count = 0;
+                   
                 if($('input[type="radio"][name=q1]:checked').val() == "Jeopardy") {
                     count++;
                 }
-                if(count > 0) {
-                    alert("Congratulations! You Passed!");
+                 if($('input[type="radio"][name=q2]:checked').val() == "IBM") {
+                    count++;
+                }
+                 if($('input[type="radio"][name=q3]:checked').val() == "Scientists downloaded documents onto him") {
+                    count++;
+                }
+                 if($('input[type="radio"][name=q4]:checked').val() == "He identifies key words") {
+                    count++;
+                }
+                 if($('input[type="radio"][name=q5]:checked').val() == "Thomas J Watson") {
+                    count++;
+                }
+                 if($('input[type="radio"][name=q6]:checked').val() == "Deep Computing") {
+                    count++;
+                }
+                 if($('input[type="radio"][name=q7]:checked').val() == "In an electronic text") {
+                    count++;
+                }
+                 if($('input[type="radio"][name=q8]:checked').val() == "He played against former contestants") {
+                    count++;
+                }
+                 if($('input[type="radio"][name=q9]:checked').val() == "Room size") {
+                    count++;
+                }
+                 if($('input[type="radio"][name=q10]:checked').val() == "Medicine") {
+                    count++;
+                }
+                
+                if(count > 6) {
+                    alert("Congratulations! You Passed! Score: %d/10", count);
                 } else {
-                    alert("You answered too many questions incorrectly. Try again.");
+                    alert("You answered too many questions incorrectly. ");
                 }
             }
             
-            // JS:
+            
 var count = $('#count').val();
 
 
+<?php
+$score='"+count+"'; 
+            $query = "SELECT score, another_field FROM class1 WHERE score = {$score}";
+            $query = "SELECT score, another_field FROM class1 WHERE scope = {$scope}";
+?>
+    
+    
 
-
-
-$.post('scores.php', { count: count}, function(data) {
-    alert( data );
-} )
         </script>
-
 
         <div ng-controller="MyAppController">
 
@@ -477,7 +525,7 @@ $.post('scores.php', { count: count}, function(data) {
 
         </div>
     </form>
-    <small> Created with excellence by Javathunderman </small>
+    <small> Created by Javathunderman </small>
 
 </body>
 
