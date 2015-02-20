@@ -32,7 +32,7 @@
 </head>
 
 <body ng-app="MyApp">
-    <a href="http://empire-london.codio.io/Quizscreen.html">
+    <a href="http://ringo-special.codio.io/Quizscreen.html">
         <img class="displayed" src="http://edlightened.tk/images/pic02.jpg" align:left="" alt="alt text" style="border:none;">
     </a>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -64,7 +64,7 @@
 
     </nav>
 
-    <form action="http://empire-london.codio.io/Quizscreen.html" method="POST">
+    <form action="http://ringo-special.codio.io/Quizscreen.html" method="POST">
 
         <br>
         <table style="margin-bottom:3px;" align="center">
@@ -466,57 +466,46 @@ echo "$q10";
         <script>
             function checkTest() {
                 var count = 0;
-                   
                 if($('input[type="radio"][name=q1]:checked').val() == "Jeopardy") {
                     count++;
                 }
-                 if($('input[type="radio"][name=q2]:checked').val() == "IBM") {
+                if($('input[type="radio"][name=q2]:checked').val() == "IBM") {
                     count++;
                 }
-                 if($('input[type="radio"][name=q3]:checked').val() == "Scientists downloaded documents onto him") {
+                if($('input[type="radio"][name=q3]:checked').val() == "Scientists downloaded documents onto him") {
                     count++;
                 }
-                 if($('input[type="radio"][name=q4]:checked').val() == "He identifies key words") {
+                if($('input[type="radio"][name=q4]:checked').val() == "He identifies key words") {
                     count++;
                 }
-                 if($('input[type="radio"][name=q5]:checked').val() == "Thomas J Watson") {
+                if($('input[type="radio"][name=q5]:checked').val() == "Thomas J Watson") {
                     count++;
                 }
-                 if($('input[type="radio"][name=q6]:checked').val() == "Deep Computing") {
+                if($('input[type="radio"][name=q6]:checked').val() == "Deep Computing") {
                     count++;
                 }
-                 if($('input[type="radio"][name=q7]:checked').val() == "In an electronic text") {
+                if($('input[type="radio"][name=q7]:checked').val() == "In an electronic text") {
                     count++;
                 }
-                 if($('input[type="radio"][name=q8]:checked').val() == "He played against former contestants") {
+                if($('input[type="radio"][name=q8]:checked').val() == "He played against former contestants") {
                     count++;
                 }
-                 if($('input[type="radio"][name=q9]:checked').val() == "Room size") {
+                if($('input[type="radio"][name=q9]:checked').val() == "Room size") {
                     count++;
                 }
-                 if($('input[type="radio"][name=q10]:checked').val() == "Medicine") {
+                if($('input[type="radio"][name=q10]:checked').val() == "Medicine") {
                     count++;
                 }
-                
                 if(count > 6) {
                     alert("Congratulations! You Passed! Score: %d/10", count);
                 } else {
                     alert("You answered too many questions incorrectly. ");
                 }
             }
-            
-            
-var count = $('#count').val();
-
-
-<?php
-$score='"+count+"'; 
+            var count = $('#count').val(); <? php
+             $score = '"+count+"';
             $query = "SELECT score, another_field FROM class1 WHERE score = {$score}";
-            $query = "SELECT score, another_field FROM class1 WHERE scope = {$scope}";
-?>
-    
-    
-
+            $query = "SELECT score, another_field FROM class1 WHERE scope = {$scope}"; ?>
         </script>
 
         <div ng-controller="MyAppController">

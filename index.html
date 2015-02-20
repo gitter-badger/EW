@@ -1,72 +1,137 @@
-<?php
-	// Initialize the session
-	session_start();
-	
-	// Include the configuration file
-	include("assets/config.php");
-	
-	if(isset($_GET["msg"])) {
-		$msg = $_GET["msg"];
-	}
-	
-	if(isset($_SESSION["login"]) || isset($_SESSION["username"])) {
-		// User is already logged in
-		header("Location: " . $main_url . "/assets/dashboard.php?PHPSESSID=" . session_id());
-		exit;
-	}
-?>
 <!DOCTYPE html>
+
 <html lang="en">
 
-	<head>
-		<title>Login - Edlightened Web</title>
-		<link type="text/css" rel="stylesheet" href="assets/css/main.css" />
-		<link type="text/css" rel="stylesheet" href="assets/css/bootstrap.css" />
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	</head>
-	
-	<body>
-        <img src= "http://edlightened.tk/images/pic02.jpg" align:"CENTER"</img>
-        
-<div class="container">
-    <div class="row">
-		<div class="span12">
-			<form class="form-horizontal" action='' method="POST">
-			  <fieldset>
-			    
-                  <br />
-			    <div class="control-group">
-			      <!-- Username -->
-			      <label class="control-label"  for="username">Username</label>
-			      <div class="controls">
-			        <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
-			      </div>
-			    </div>
-                  <br />
-			    <div class="control-group">
-			      <!-- Password-->
-			      <label class="control-label" for="password">Password</label>
-			      <div class="controls">
-			        <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
-			      </div>
-			    </div>
-                  <br />
-			    <div class="control-group">
-			      <!-- Button -->
-			      <div class="controls">
-			        <a href= "http://empire-london.codio.io/Edlightened+Dashboard.html"<a><button class="btn btn-success">Login</button></a>
-			      </div>
-                  <br />
-			    </div>
-			  </fieldset>
-			</form>
-		</div>
-	</div>
-</div>
+<head>
+    <script type="text/javascript">
+        window["_gaUserPrefs"] = {
+            ioo: function() {
+                return true;
+            }
+        }
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Onine quiz program for students to use, and for teachers to aggregate student data.">
+    <meta name="author" content="javathunderman">
+
+
+    <title>Edlightened Dashboard</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/dashboard/dashboard.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://ringo-special.codio.io/index.html">Edlightened Web</a>
+
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
 
 
 
-	</body>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Containers for the Edlightened Dashboard -->
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <h1 class="page-header">Dashboard</h1>
+
+                <div class="row placeholders">
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <a href="http://ringo-special.codio.io/Quizscreen.html" <a>
+                            <img data-src="http://upload.wikimedia.org/wikipedia/commons/7/7b/Math.png" class="img-responsive" alt="200x200" src="http://ecx.images-amazon.com/images/I/61Tchc9QyeL._SL290_.jpg" data-holder-rendered="true" </img>
+                        </a>
+                        <h4>Math</h4>
+                        <br />
+                        <br />
+                        <br />
+                        <!-- Flash card links -->
+                        <a href="http://edlightened.tk\betaweb\cards\index.html" <a>
+                            <input type="submit" value="Flash cards">
+                        </a>
+
+                    </div>
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <a href="http://ringo-special.codio.io/Quizscreen.html" <a>
+                            <img data-src="https://openclipart.org/detail/166341/people-talking-bubbles-by-palomaironique" class="img-responsive" alt="200x200" src="http://ecx.images-amazon.com/images/I/61Tchc9QyeL._SL290_.jpg" data-holder-rendered="true" </img>
+                        </a>
+                        <h4>Language Arts</h4>
+                        <br />
+                        <br />
+                        <br />
+
+                        <a href="http://edlightened.tk\betaweb\cards\index.html" <a>
+                            <input type="submit" value="Flash cards">
+                        </a>
+
+                    </div>
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <a href="http://ringo-special.codio.io/Quizscreen.html" <a>
+                            <img data-src="https://openclipart.org/detail/203314/science-by-minduka-203314" class="img-responsive" alt="200x200" src="http://ecx.images-amazon.com/images/I/61Tchc9QyeL._SL290_.jpg" data-holder-rendered="true" </img>
+                        </a>
+                        <h4>Science</h4>
+                        <br />
+                        <br />
+                        <br />
+
+                        <a href="http://edlightened.tk\betaweb\cards\index.html" <a>
+                            <input type="submit" value="Flash cards">
+                        </a>
+
+                    </div>
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <a href="http://ringo-special.codio.io/Quizscreen.html" <a>
+                            <img data-src="http://upload.wikimedia.org/wikipedia/commons/f/f8/History11.jpg" class="img-responsive" alt="200x200" src="http://ecx.images-amazon.com/images/I/61Tchc9QyeL._SL290_.jpg" data-holder-rendered="true" </img>
+                        </a>
+                        <h4>Social Studies</h4>
+                        <br />
+                        <br />
+                        <br />
+
+                        <a href="http://edlightened.tk\betaweb\cards\index.html" <a>
+                            <input type="submit" value="Flash cards">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+    </div>
+
+
+</body>
 
 </html>
+
+//https://openclipart.org/detail/166341/people-talking-bubbles-by-palomaironique //https://openclipart.org/detail/203314/science-by-minduka-203314 //http://upload.wikimedia.org/wikipedia/commons/f/f8/History11.jpg //http://upload.wikimedia.org/wikipedia/commons/7/7b/Math.png
